@@ -1,0 +1,20 @@
+<md-toolbar color="primary">
+
+    <button md-button routerLink="/">
+      <md-icon>home</md-icon>
+               Voya
+    </button>
+    <div>
+        <button md-button routerLink="/products">Products</button>
+        <button md-button routerLink="/dashboard">Dashboard</button>
+    </div>
+    <button md-button [md-menu-trigger-for]="menu">
+     Other <md-icon>keyboard_arrow_down</md-icon>
+    </button>
+
+</md-toolbar>
+<md-menu #menu="mdMenu">
+    <button md-menu-item routerLink="/products">Products</button>
+    <button md-menu-item routerLink="/dashboard">Dashboard</button>
+    <!--<button md-menu-item>Help</button>-->
+</md-menu>
